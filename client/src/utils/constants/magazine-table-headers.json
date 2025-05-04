@@ -1,0 +1,36 @@
+[
+  { "key": "title", "header": "Title", "filterType": "text" },
+  { "key": "publisher", "header": "Publisher", "filterType": "text" },
+  {
+    "key": "genre",
+    "header": "Genre",
+    "filterType": "select",
+    "filterOptions": [
+      "Science",
+      "Tech",
+      "History",
+      "Lifestyle",
+      "Entertainment",
+      "General Interest",
+      "Music",
+      "Architecture",
+      "Fashion",
+      "Cooking",
+      "Business",
+      "Home",
+      "Education",
+      "Cultero-political",
+      "News",
+      "Sports",
+      "Global Affairs",
+      "Health"
+    ]
+  },
+  {
+    "key": "frequency",
+    "header": "Frequency",
+    "filterType": "select",
+    "filterOptions": ["Weekly", "Biweekly", "Monthly"]
+  },
+  { "key": "circulation", "header": "Circulation", "filterType": "text" }
+]

@@ -1,0 +1,27 @@
+[
+  { "key": "title", "header": "Title", "filterType": "text" },
+  { "key": "author", "header": "Author", "filterType": "text" },
+  { "key": "isbn", "header": "ISBN", "filterType": "text" },
+  { "key": "publishedYear", "header": "Published Date", "filterType": null },
+  {
+    "key": "genre",
+    "header": "Genre",
+    "filterType": "select",
+    "filterOptions": [
+      "Science Fiction",
+      "Fantasy",
+      "Thriller",
+      "Meditation",
+      "Neuroscience"
+    ]
+  },
+  {
+    "key": "language",
+    "header": "Language",
+    "filterType": "select",
+    "filterOptions": ["English", "Spanish", "German"]
+  },
+  { "key": "pageCount", "header": "Page Count", "filterType": null },
+  { "key": "publisher", "header": "Publisher", "filterType": "text" },
+  { "key": "rating", "header": "Rating", "filterType": "text" }
+]
