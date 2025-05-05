@@ -44,7 +44,7 @@ export default function Books() {
   const selectedData = allBooks.filter(book => checkedRows.includes(book.isbn));
 
   return (
-    <div>
+    <div className="w-full">
       <SortAndSearch columns={columns} />
       <Table
         columns={columns as Column[]}

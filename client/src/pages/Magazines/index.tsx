@@ -49,7 +49,7 @@ export default function Magazines() {
   );
 
   return (
-    <div>
+    <div className="w-full">
       <SortAndSearch columns={columns} />
       <Table
         columns={columns as Column[]}
