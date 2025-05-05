@@ -18,7 +18,6 @@ export default function SortAndSearch({ columns }: { columns: Column[] }) {
   }, [debouncedSearch]);
 
   // Todo: abstract some of these into individual / reusable components
-
   return (
     <div>
       <div className="">
@@ -53,6 +52,9 @@ export default function SortAndSearch({ columns }: { columns: Column[] }) {
             }
             className="border p-1"
           >
+            <option value="" disabled>
+              Select a {category}
+            </option>
             {filterOptions?.map(filterOption => {
               return (
                 <option key={filterOption} value={filterOption}>
