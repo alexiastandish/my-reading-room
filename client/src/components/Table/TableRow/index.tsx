@@ -2,6 +2,7 @@ import { useCheckedRows } from '@/hooks/useCheckedRows';
 import { Column } from '@/types/columns';
 import { getRowParamValue } from '@/utils/helpers/get-row-param-value';
 import { Row } from '..';
+import TableCell from '../TableCell';
 
 function TableRow({
   row,
@@ -21,24 +22,18 @@ function TableRow({
   };
 
   const checked = checkedRows.includes(row[paramValue]);
-
+  console.log('checked', checked);
   return (
     <tr
       key={row.id}
-      className={`cursor-pointer transition-colors duration-100 
-        ${checked ? 'bg-blue-100' : 'bg-white'}
-        hover:bg-blue-50
+      className={`cursor-pointer transition-colors duration-100 hover:bg-blue-100
+        ${checked ? 'bg-blue-500' : 'bg-white'}
       `}
       onClick={() => handleClickRow(row[paramValue])}
       style={{ cursor: 'pointer' }}
     >
       {columns.map(column => (
-        <td
-          key={column.key}
-          className="border px-4 py-2 text-sm text-gray-800 h-12 align-middle"
-        >
-          <div>{row[column.key]}</div>
-        </td>
+        <TableCell column={column} key={column.key} row={row} />
       ))}
     </tr>
   );

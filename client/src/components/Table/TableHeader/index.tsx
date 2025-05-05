@@ -3,7 +3,6 @@ import { Column } from '@/types/columns';
 
 function TableHeader({ columns }: { columns: Column[] }) {
   const { category, setFilters } = useFilters();
-  console.log('category', category);
   return (
     <thead>
       <tr className="bg-gray-100 text-left text-sm font-semibold text-gray-700">

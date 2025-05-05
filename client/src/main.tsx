@@ -29,11 +29,7 @@ const router = createBrowserRouter([
 /**
 TODOs
 - add tailwind config / styles
-- loading and skeleton ui on load / in flight data 
-- vite deployment 
-- make column headers clickable (but keep dropdown functionality as well)
 - add testing
-- pagination styling 
 - update readme
  **/
 ReactDOM.createRoot(document.getElementById('root')!).render(
