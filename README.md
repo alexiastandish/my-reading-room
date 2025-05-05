@@ -2,7 +2,11 @@
 
 A full-stack web application for browsing and managing books and magazines.
 
+Demo deployed with vercel and render. [View demo](https://my-reading-room.vercel.app/)
+
 ## Features
+
+WIP
 
 ## Tech Stack
 
