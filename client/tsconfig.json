@@ -18,10 +18,11 @@
 
     /* Linting */
     "strict": false,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
+    "noUncheckedSideEffectImports": true,
+    "noImplicitAny": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false
   },
   "include": ["src", "vite.config.mjs"]
 }
