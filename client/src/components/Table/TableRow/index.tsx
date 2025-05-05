@@ -22,7 +22,6 @@ function TableRow({
   };
 
   const checked = checkedRows.includes(row[paramValue]);
-  console.log('checked', checked);
   return (
     <tr
       key={row.id}

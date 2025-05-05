@@ -1,5 +1,4 @@
 import { useFilters } from '@/hooks/useFilters';
-import { IconArrowLeft, IconArrowRight } from '@tabler/icons-react';
 
 // Todo: add styling
 export default function Pagination({ totalPages }: { totalPages: number }) {
@@ -13,7 +12,7 @@ export default function Pagination({ totalPages }: { totalPages: number }) {
         onClick={() => setFilters({ page: page - 1, checkedRows: [] })}
         className="disabled:opacity-40 hover:bg-gray-100 transition cursor-pointer"
       >
-        <IconArrowLeft size={16} />
+        &#8592;
       </button>
 
       <span className="text-sm font-medium">{page}</span>
@@ -24,7 +23,7 @@ export default function Pagination({ totalPages }: { totalPages: number }) {
         disabled={page >= totalPages}
         className="disabled:opacity-40 hover:bg-gray-100 transition cursor-pointer"
       >
-        <IconArrowRight size={16} />
+        &#8594;
       </button>
     </div>
   );

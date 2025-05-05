@@ -15,7 +15,6 @@ export function useCheckedRows() {
   const setCheckedRows = useCallback(
     ({ rowParam }: { rowParam: string }) => {
       const updated = [...checkedRows];
-      console.log('rowParam', rowParam);
 
       // Check to see if the rowParam is already in the search params checkedRows
       if (checkedRows.includes(rowParam)) {
