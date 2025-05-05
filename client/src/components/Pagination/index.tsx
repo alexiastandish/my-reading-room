@@ -1,6 +1,5 @@
 import { useFilters } from '@/hooks/useFilters';
 
-// Todo: add styling
 export default function Pagination({ totalPages }: { totalPages: number }) {
   const { page, setFilters } = useFilters();
 
