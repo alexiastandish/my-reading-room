@@ -6,7 +6,7 @@ import {
 import { fetchBooks } from '@/api';
 import SortAndSearch from '@/components/SortAndSearch';
 import Table from '@/components/Table';
-import columns from '@/utils/constants/book-table-headers.json';
+import columns from '@/utils/constants/book-categories.json';
 import { Column } from '@/types/columns';
 import { Book } from '@/types/book';
 import { useFilters } from '@/hooks/useFilters';
@@ -17,7 +17,6 @@ export default function Books() {
   const { checkedRows } = useCheckedRows();
   const { page, sortOrder, category, subCategory, search } = useFilters();
 
-  // Todo: loading and skeleton ui (in flight data)
   const { status, data, error, isFetching, isPlaceholderData } = useQuery({
     queryKey: ['books', page, sortOrder, search, category, subCategory],
     queryFn: async () => {

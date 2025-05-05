@@ -9,9 +9,9 @@ export default function HomeBtn() {
   return (
     <Link
       to="/"
-      className="cursor-pointer inline-block px-4 py-2 text-white bg-blue-600 rounded hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400"
+      className="cursor-pointer text-blue-500 hover:text-blue-700  hover:underline transition-all duration-100"
     >
-      Homepage
+      &#8672; go back home
     </Link>
   );
 }

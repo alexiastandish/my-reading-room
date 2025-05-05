@@ -1,6 +1,6 @@
 import SortAndSearch from '@/components/SortAndSearch';
 import Table from '@/components/Table';
-import columns from '@/utils/constants/magazine-table-headers.json';
+import columns from '@/utils/constants/magazine-categories.json';
 import { Column } from '@/types/columns';
 import {
   keepPreviousData,
