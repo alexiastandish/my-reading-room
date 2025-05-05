@@ -39,6 +39,7 @@ export default function SortAndSearch({ columns }: { columns: Column[] }) {
             );
           })}
         </select>
+        <p>(or click on a column header to set the filter)</p>
       </div>
 
       {filterType === 'select' && (

@@ -1,14 +1,15 @@
 import { useCheckedRows } from '@/hooks/useCheckedRows';
+import { Column } from '@/types/columns';
 import { getRowParamValue } from '@/utils/helpers/get-row-param-value';
+import { Row } from '..';
 
 function TableRow({
   row,
   columns,
   tableId,
 }: {
-  // todo: update types
-  row: any;
-  columns: any;
+  row: Row;
+  columns: Column[];
   tableId: string;
 }) {
   const { checkedRows, setCheckedRows } = useCheckedRows();

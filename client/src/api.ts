@@ -1,6 +1,8 @@
 import { Book } from '@/types/book';
 import { Magazine } from '@/types/magazine';
 
+const API_URL = import.meta.env.VITE_API_URL;
+
 export async function fetchBooks({
   page = 1,
   search = '',
@@ -22,7 +24,7 @@ export async function fetchBooks({
   hasMore: boolean;
 }> {
   const response = await fetch(
-    `http://localhost:3434/api/books?page=${page}&search=${search}&category=${category}&subCategory=${subCategory}&sortOrder=${sortOrder}`,
+    `${API_URL}/api/books?page=${page}&search=${search}&category=${category}&subCategory=${subCategory}&sortOrder=${sortOrder}`,
     {
       method: 'GET',
       headers: {
@@ -73,7 +75,7 @@ export async function fetchMagazines({
   hasMore: boolean;
 }> {
   const response = await fetch(
-    `http://localhost:3434/api/magazines?page=${page}&search=${search}&category=${category}&subCategory=${subCategory}&sortOrder=${sortOrder}`,
+    `${API_URL}/api/magazines?page=${page}&search=${search}&category=${category}&subCategory=${subCategory}&sortOrder=${sortOrder}`,
     {
       method: 'GET',
       headers: {

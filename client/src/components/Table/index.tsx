@@ -10,7 +10,7 @@ type TableProps = {
   tableId: string;
 };
 
-type Row = {
+export type Row = {
   [key: string]: any;
   _id: string;
 };
